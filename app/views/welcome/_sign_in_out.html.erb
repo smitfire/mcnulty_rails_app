@@ -1,0 +1,35 @@
+
+
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+  <ul class="nav navbar-nav side-nav">
+    <% if current_patient %>
+      <li>
+        <i class="fa fa-fw fa-dashboard"></i><%= link_to "Profile Page", patient_path(current_patient.id), class: 'btn btn-success' %>
+      </li>
+      <li>
+        <i class="fa fa-fw fa-dashboard"></i><%= link_to "Log out", session_path(current_patient.id), method: :delete, class: 'btn btn-default' %>
+      </li>
+      <% else %>
+          <%= form_for :patient, html:{class: 'signinform'}, url: sessions_path do |f| %>
+            <li>
+              <p class="form-group">
+                <i class="fa fa-fw fa-dashboard"></i><%= f.text_field :email, class: 'form-control', :placeholder => "Email" %>
+              </p>
+            </li>
+            <li>
+              <p class="">
+                <i class="fa fa-fw fa-dashboard"></i><%= f.password_field :password, class: 'form-control', :placeholder => "Password" %>
+              </p>
+            </li>
+            <li>
+              <p class="">
+                <i class="fa fa-fw fa-dashboard"></i><%= f.submit "Sign In", class: '' %>
+              </p>
+            </li>
+          <% end %>
+        <li>
+          <i class="fa fa-fw fa-dashboard"></i><%= link_to "Sign Up", new_patient_path, class: '' %>
+        </li>
+      <%end%>
+  </ul>
+</div>

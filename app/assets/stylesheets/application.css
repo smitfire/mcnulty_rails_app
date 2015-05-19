@@ -1,0 +1,11 @@
+/*
+*= require_self
+*= require morris
+*= require sb-admin
+*= require sb-admin-rtl
+*= require bootstrap-rtl.min
+*= require patients
+*= require ../font-awesome/less/font-awesome
+*= require cyborg/loader
+*= require cyborg/bootswatch
+*/

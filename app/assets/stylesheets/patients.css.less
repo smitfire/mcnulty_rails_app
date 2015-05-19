@@ -1,0 +1,234 @@
+#detail{
+    // position:relative;
+    // top:200px;
+    // margin-bottom: -100px;
+    // text-align: center;
+}
+#detail li:first-child p {
+    position:absolute;
+    text-align: left;
+    top:120px; left: -80px;
+    font-size: 14px;
+    width:300px;
+}
+#detail li:first-child span{
+    color:#6bb7c7;
+}
+#detail li:last-child span{
+    color:#d7392d;
+}
+#detail li:last-child p {
+    position:absolute;
+    text-align: right;
+    top:120px; left: -50px;
+    font-size: 14px;
+    width:300px;
+}
+#detail li{
+    font-size: 35px;
+    position:absolute;
+    text-align: center;
+}
+#detail li:first-child{
+    left: 325px;
+    top:350px;
+}
+#detail li:last-child{
+    right: 100px;
+    top:350px;
+}
+
+#detail li:first-child small{
+    font-size: 25px;
+    text-align: left;
+}
+#detail li:last-child small{
+    font-size: 25px;
+    text-align: right;
+}
+
+ul.user-stats {
+    list-style: none;
+    // padding-top: 20px;
+}
+img.img-circle,img.user-avatar {
+    position: absolute;
+    right: 422px;
+    top: 362px;
+    display: inline;
+    width: 370px;
+}
+p.post-excerpt {
+    margin-bottom: 0;
+    height: 60px;
+}
+hr.light {
+    border-top: 1px solid #FFFFFF;
+}
+.top-margin {
+    margin-top: 2em;
+}
+.excerpt {
+    background-color: #EEEEEE;
+    padding: 5%;
+    min-height: 80px;
+}
+.except {
+    h3 {
+        line-height: 1.2em;
+    }
+}
+.details {
+    text-align: center;
+}
+.comment-text {
+    padding: 2%;
+}
+span.plus {
+    font-size: 30px;
+}
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#lineChart,#pieChart {
+    width: 100%;
+}
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 200;
+    ul {
+        list-style: none;
+    }
+}
+body ul, body li {
+    margin: 0;
+    padding: 0;
+}
+.chart {
+    min-height: 400px;
+    padding: 0em;
+}
+.chart--headline, .chart--subHeadline {
+    text-align: center;
+}
+.chart--headline {
+    position: relative;
+    font-weight: 100;
+    font-size: 18px;
+}
+.chart--headline:before {
+    position: absolute;
+    content: '';
+    bottom: 133%;
+    left: 50%;
+    width: 25%;
+    margin: 0 0 0 -12.5%;
+}
+.chart--subHeadline {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.charts--container {
+    background-color: #fff;
+    width: 100%;
+    margin: 1em auto;
+}
+.charts--headline {
+    text-align: center;
+    color: #444;
+    background-color: #fff;
+    padding: 1em;
+}
+.lineChart--area {
+    fill: url(#lineChart--gradientBackgroundArea);
+}
+.lineChart--areaLine {
+    fill: none;
+    stroke: #6bb7c7;
+    stroke-width: 2;
+}
+.lineChart--bubble--label {
+    fill: none;
+    stroke: #6bb7c7;
+    font-size: 10.8px;
+    font-style: italic;
+    font-weight: 100;
+}
+.lineChart--bubble--value {
+    fill: #fff;
+    stroke: #fff;
+    font-size: 18px;
+    font-weight: 100;
+}
+.lineChart--circle {
+    fill: #6bb7c7;
+    stroke: #fff;
+    stroke-width: 2;
+}
+.lineChart--circle__highlighted {
+    fill: #fff;
+    stroke: adjust-lightness(#6bb7c7, -15);
+}
+.lineChart--gradientBackgroundArea--top {
+    stop-color: #6bb7c7;
+    stop-opacity: 0.1;
+}
+.lineChart--gradientBackgroundArea--bottom {
+    stop-color: #6bb7c7;
+    stop-opacity: 0.6;
+}
+.lineChart--xAxisTicks .domain, .lineChart--xAxis .domain, .lineChart--yAxisTicks .domain {
+    display: none;
+}
+.lineChart--xAxis {
+    .tick {
+        line {
+            display: none;
+        }
+    }
+}
+.lineChart--xAxisTicks .tick line, .lineChart--yAxisTicks .tick line {
+    fill: none;
+    stroke: adjust-lightness(#d7392d, 10);
+    stroke-width: 1;
+    stroke-dasharray: 2,2;
+}
+.pieChart--center--innerCircle {
+    fill: #d7392d;
+}
+.pieChart--center--text {
+    font-size: 24px;
+    height: 100px;
+}
+.pieChart--center--outerCircle {
+    fill: rgba(255, 255, 255, 0.75);
+}
+.pieChart--detail--percentage {
+    font-size: 18px;
+    font-weight: 100;
+    stroke-width: 1px;
+}
+.pieChart--detail--textContainer {
+    background-color: red;
+    padding: 5px;
+    margin: 5px;
+    height: 100px;
+    font-style: italic;
+}
+.pieChart--detail__left {
+    text-align: left;
+    outline: red solid 1px;
+}
+.pieChart--detail__right {
+    text-align: right;
+    outline: red solid 1px;
+}
+.pieChart__blue {
+    fill: #6bb7c7;
+}
+.pieChart__red {
+    fill: #d7392d;
+}
